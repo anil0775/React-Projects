@@ -1,0 +1,96 @@
+/* Intuitive */
+
+.landing-page {
+  font-family: sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.landing-page {
+  background-color: #007bff;
+}
+
+.landing-page {
+  background-image: url("/images/landing-page-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-page h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.landing-page h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.landing-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.landing-page li {
+  padding: 10px;
+}
+
+.landing-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.landing-page a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .landing-page h1 {
+    font-size: 28px;
+  }
+
+  .landing-page h2 {
+    font-size: 20px;
+  }
+
+  .landing-page ul {
+    font-size: 16px;
+  }
+
+  .landing-page li {
+    padding: 5px;
+  }
+}
+
+/* Appealing */
+
+.landing-page {
+  background-color: #fff;
+}
+
+.landing-page h1 {
+  text-align: center;
+}
+
+.landing-page h2 {
+  text-align: center;
+}
+
+.landing-page ul {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.landing-page a {
+  background-color: #007bff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.landing-page a:hover {
+  background-color: #0069d9;
+}

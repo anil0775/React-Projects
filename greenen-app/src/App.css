@@ -1,0 +1,173 @@
+/* Main container styling */
+.registration-form {
+  display: flex;         /* Enable flexbox for this container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center;   /* Horizontally center content */
+  width: 100%;
+  max-width: 500px;
+  max-height: 650px;     /* Adjusted height */
+  margin: auto;
+  padding: 20px 40px;    /* Adjusted padding */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;      /* Add scroll if the content exceeds the container's height */
+}
+
+/* Header styling */
+.registration-form h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.registration-form p {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  color: #777;
+  text-align: center;
+}
+
+/* Input fields styling */
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;  /* Adjusted margin for reduced container height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.registration-form input[type="text"]:focus,
+.registration-form input[type="email"]:focus,
+.registration-form input[type="password"]:focus,
+.registration-form input[type="tel"]:focus {
+  border-color: #64dd17; /* Bright green border for focused inputs */
+}
+
+/* Checkbox label styling */
+.registration-form label {
+  display: block;
+  margin-bottom: 20px;  /* Increase bottom margin for clearer separation */
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+/* Checkbox styling */
+.registration-form input[type="checkbox"] {
+  margin-right: 10px;  /* Increase margin for better separation from the label text */
+}
+
+/* Button styling */
+.registration-form button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 15px;     /* Adjusted margin for reduced container height */
+  border: none;
+  border-radius: 5px;
+  background-color: #64dd17;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #539e14; /* A slightly darker green on hover */
+}
+
+/* Link styling */
+.registration-form a {
+  font-size: 0.9em;
+  color: #64dd17; /* Bright green color to match the theme */
+  text-decoration: none;
+}
+
+.registration-form a:hover {
+  text-decoration: underline; /* Underline the link on hover for a clear interactive hint */
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .registration-form {
+      max-width: 80%;  /* Taking a bit more space on tablet screens */
+      padding: 20px 40px;  /* Slightly more padding */
+  }
+  
+  .registration-form h2 {
+      font-size: 1.7em;  /* Bigger fonts for better visibility */
+  }
+  
+  .registration-form p {
+      font-size: 1em;
+  }
+}
+
+/* Mobile Phones (landscape and portrait) */
+
+@media only screen and (max-width: 599px) {
+  .registration-form {
+      max-width: 95%;  /* Almost full width on mobile for better usage of space */
+      padding: 15px;  /* Slightly less padding to fit content better on small screens */
+  }
+
+  .registration-form h2 {
+      font-size: 1.4em;  /* Adjusted font size for mobile readability */
+  }
+  
+  .registration-form p {
+      font-size: 0.9em;  /* Adjusted font size for mobile readability */
+  }
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Styles for the form actions container */
+.form-actions {
+  display: flex; /* Using flexbox */
+  justify-content: start; /* Align items to the start */
+  align-items: center; /* Align buttons vertically */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Add some space above the button container */
+}
+
+/* General button styles */
+.form-actions button {
+  padding: 10px 20px; /* Padding for the buttons */
+  border: none; /* Remove default borders */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  color: white; /* Text color */
+  min-width: 100px; /* Minimum width */
+}
+
+/* Specific styles for the submit button */
+.form-actions button[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+}
+
+/* Specific styles for the clear button */
+.form-actions button[type="button"] {
+  background-color: #1E90FF; /* Blue background for clear/reset */
+}
+
+/* Styles for button hover effect */
+.form-actions button:hover {
+  opacity: 0.9; /* Slightly change opacity on hover */
+}
